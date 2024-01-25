@@ -1,1 +1,39 @@
-// Here we can place general styles for other HTML elements (like body, a, button).
+// ------------Base Styles-------------- //
+* {
+    box-sizing: border-box;
+    margin: $margin-0;
+    padding: $padding-0;
+}
+
+// HTML element
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+// Body
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+}
+
+// Links
+a {
+  text-decoration: none;
+  transition: $transition-base;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
