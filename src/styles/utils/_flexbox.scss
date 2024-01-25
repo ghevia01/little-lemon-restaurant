@@ -1,0 +1,128 @@
+// Basic flex container
+.flex {
+  display: flex;
+}
+
+// Flex directions
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+// Justify content
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+// Align items
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+// Align self
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+// Flex wrap
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+// Flex grow
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+// Flex shrink
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+// Flex basis
+.flex-basis-auto {
+  flex-basis: auto;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+.flex-basis-1 {
+  flex-basis: 1;
+}
+
+.flex-basis-2 {
+  flex-basis: 2;
+}
+
+.flex-basis-3 {
+  flex-basis: 3;
+}
