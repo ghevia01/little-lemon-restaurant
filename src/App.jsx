@@ -1,19 +1,14 @@
-import Header from "./components/sections/Header/Header";
-import Hero from "./components/sections/Hero/Hero";
-import Highlights from "./components/sections/Highlights/Highlights";
-import Testimonials from "./components/sections/Testimonials/Testimonials";
-import Footer from "./components/sections/Footer/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <>
-      <h1>React App</h1>
-      <Header />
-      <Hero />
-      <Highlights />
-      <Testimonials />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
