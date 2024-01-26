@@ -1,8 +1,8 @@
 // ------------Base Styles-------------- //
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    margin: $margin-0;
-    padding: $padding-0;
 }
 
 // HTML element
