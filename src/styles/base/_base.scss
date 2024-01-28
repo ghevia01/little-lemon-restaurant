@@ -28,12 +28,20 @@ h6 {
   font-weight: $font-weight-bold;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 // Links
 a {
   text-decoration: none;
-  transition: $transition-base;
   cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
+}
+
+// Buttons
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

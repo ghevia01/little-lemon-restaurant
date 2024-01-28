@@ -1,33 +1,25 @@
 // ------------Color Variables-------------- //
 
-// Color palette
-$color-primary-1: #495E57;
-$color-primary-2: #F4CE14;
-$color-secondary-1: #EE9972;
-$color-secondary-2: #FBDABB;
-$color-highlight-1: #EDEFEE;
+// Website Color palette
+$color-primary-1: #495e57;
+$color-primary-2: #f4ce14;
+$color-secondary-1: #ee9972;
+$color-secondary-2: #fbdabb;
+$color-highlight-1: #edefee;
 $color-highlight-2: #333333;
 
-// ------------Font Variables-------------- //
+// Grayscale
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-light: #6a6a6a;
 
-// Font family
-$font-family-primary: 'Roboto', sans-serif;
-$font-family-secondary: 'Open Sans', sans-serif;
+// ------------Width & Height Variables-------------- //
 
-// Font sizes
-$font-size-base: 1.6rem; // 16px
-$font-size-small: 1.4rem; // 14px
-$font-size-medium: 1.8rem; // 18px
-$font-size-large: 2.4rem; // 24px
-$font-size-xlarge: 3.2rem; // 32px
-$font-size-xxlarge: 4.8rem; // 48px
-$font-size-xxxlarge: 6.4rem; // 64px
+// Width
+$width-full: 100%;
 
-// Font weight
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
-$font-weight-extrabold: 800;
+// Height
+$height-full: 100%;
 
 // ------------Spacing Variables-------------- //
 
@@ -35,21 +27,22 @@ $font-weight-extrabold: 800;
 $line-height-base: 1.5;
 
 // Margin
-$margin-0: 0;
 $margin-1: 0.8rem; // 8px
-$margin-2: 1.6rem; // 16px
-$margin-3: 2.4rem; // 24px
+$margin-2: 1.2rem; // 12px
+$margin-3: 1.6rem; // 16px
+$margin-4: 2.4rem; // 24px
+$margin-5: 3.2rem; // 32px
 
 // Padding
-$padding-0: 0;
-$padding-1: 0.8rem; // 8px
-$padding-2: 1.6rem; // 16px
-$padding-3: 2.4rem; // 24px
+$padding-section-sides: 0 20rem; // 0 200px
 
 // Spacing
 $spacing-1: 0.8rem; // 8px
-$spacing-2: 1.6rem; // 16px
-$spacing-3: 2.4rem; // 24px
+$spacing-2: 1.2rem; // 12px
+$spacing-3: 1.6rem; // 16px
+$spacing-4: 2.4rem; // 24px
+$spacing-5: 3.2rem; // 32px
+$spacing-6: 4.8rem; // 48px
 
 // Z-index
 $z-index-base: 1;
@@ -68,7 +61,7 @@ $border-width-base: 1px;
 $border-width-thick: 2px;
 
 // Border style
-$border-style-solid: solid;
+$border-style-base: solid;
 
 // Border color
 $border-color-base: #333333;
@@ -79,15 +72,9 @@ $border-color-base: #333333;
 $box-shadow-cards: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 $box-shadow-hovered: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 
-// ------------Transition Variables-------------- //
-
-// Transition
-$transition-base: all 0.3s ease-in-out;
-
 // ------------Breakpoints Variables-------------- //
 
 $breakpoint-small: 37.5em; // 600px
 $breakpoint-medium: 56.25em; // 900px
 $breakpoint-large: 75em; // 1200px
 $breakpoint-xlarge: 112.5em; // 1800px
-

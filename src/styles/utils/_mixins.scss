@@ -1,17 +1,1 @@
-// Flex container with optional direction
-@mixin flex-container($direction: row, $wrap: nowrap) {
-  display: flex;
-  flex-direction: $direction;
-  flex-wrap: $wrap;
-}
 
-// Flex item with optional grow, shrink, and basis
-@mixin flex-item($grow: 0, $shrink: 1, $basis: auto) {
-  flex: $grow $shrink $basis;
-}
-
-// Flex align with optional justify and align
-@mixin flex-align($justify: center, $align: center) {
-  justify-content: $justify;
-  align-items: $align;
-}
