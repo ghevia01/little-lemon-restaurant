@@ -1,18 +1,9 @@
-import Header from  "../../components/sections/Header/Header";
-import Hero from "../../components/sections/Hero/Hero";
-import Highlights from "../../components/sections/Highlights/Highlights";
-import Testimonials from "../../components/sections/Testimonials/Testimonials";
-import Footer from "../../components/sections/Footer/Footer";
+import Header from "../../components/layout/Header/Header";
 
 function Home() {
   return (
     <>
-      <h1>Home Page</h1>
       <Header />
-      <Hero />
-      <Highlights />
-      <Testimonials />
-      <Footer />
     </>
   );
 }
