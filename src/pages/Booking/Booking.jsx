@@ -1,37 +1,32 @@
-import React, { useReducer } from "react";
-import Header from "../../components/layout/Header/Header";
-import BookingForm from "../../components/layout/BookingForm/BookingForm";
+// Booking.js
+import { useState } from 'react';
+import { useFetchAvailableTimes } from '../../hooks/fetchData.js';
+import Header from '../../components/layout/Header/Header';
+import BookingForm from '../../components/layout/BookingForm/BookingForm';
+import './booking.scss';
 
-import "./booking.scss";
-
-// Initial state for the available times reducer
-const initialTimesState = ["10:00", "12:00", "14:00", "16:00"];
-
-// Reducer function for the available times
-function timesReducer(state, action) {
-  switch (action.type) {
-    case "UPDATE_TIMES":
-      return { ...state };
-    default:
-      return state;
-  }
-}
+// Get current date
+const currentDate = new Date();
 
 function Booking() {
-  // Reducer for the available times
-  const [availableTimes, dispatch] = useReducer(
-    timesReducer,
-    initialTimesState,
-  );
+
+  // State for selected date
+  const [selectedDate, setSelectedDate] = useState(currentDate);
+
+  // Fetch available times for selected date
+  const availableTimeSlots = useFetchAvailableTimes(selectedDate);
+
+  // Handle date change
+  const handleDateChange = (newDate) => {
+    setSelectedDate(newDate);
+  };
 
   return (
     <>
       <Header />
       <BookingForm
-        availableTimes={availableTimes}
-        OnDateChange={(newDate) =>
-          dispatch({ type: "UPDATE_TIMES", payload: newDate })
-        }
+        availableTimes={availableTimeSlots}
+        onDateChange={handleDateChange}
       />
     </>
   );
