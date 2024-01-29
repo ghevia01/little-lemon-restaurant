@@ -1,8 +1,18 @@
-import Button from "../../common/Button/Button"
+import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
+import Button from "../../common/Button/Button";
 
 import "./booking-form.scss";
 
 const BookingForm = ({ availableTimes, onDateChange }) => {
+  const navigate = useNavigate();
+
+  // Handle form submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/confirmed-booking");
+  };
+
   // Handle date change
   const handleDatechange = (e) => {
     onDateChange(e.target.value);
@@ -11,7 +21,7 @@ const BookingForm = ({ availableTimes, onDateChange }) => {
   return (
     <div className="booking-form">
       <h1 className="form-title">Book a Table</h1>
-      <form className="flex flex-column">
+      <form className="flex flex-column" onSubmit={handleSubmit}>
         <div className="form-row-wrapper flex flex-row">
           <div className="form-group flex flex-column">
             <label htmlFor="firstName">First name</label>
@@ -71,6 +81,12 @@ const BookingForm = ({ availableTimes, onDateChange }) => {
       </form>
     </div>
   );
+};
+
+// Prop types
+BookingForm.propTypes = {
+  availableTimes: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onDateChange: PropTypes.func.isRequired,
 };
 
 export default BookingForm;
