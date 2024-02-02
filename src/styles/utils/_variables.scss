@@ -13,6 +13,10 @@ $color-white: #ffffff;
 $color-black: #000000;
 $color-gray-light: #6a6a6a;
 
+// Error & Success
+$color-success: #5cb85c;
+$color-danger: #d9534f;
+
 // ------------Width & Height Variables-------------- //
 
 // Width
@@ -34,7 +38,9 @@ $margin-4: 2.4rem; // 24px
 $margin-5: 3.2rem; // 32px
 
 // Padding
-$padding-section-sides: 0 20rem; // 0 200px
+$padding-header: 0 22rem; // 0 200px
+$padding-hero: 16rem 22rem; // 200px 200px
+$padding-section: 6rem 22rem; // 80px 200px
 
 // Spacing
 $spacing-1: 0.8rem; // 8px

@@ -1,6 +1,6 @@
 // Font family
-$font-family-primary: 'Roboto', sans-serif;
-$font-family-secondary: 'Open Sans', sans-serif;
+$font-family-primary: 'Markazi Text', serif;
+$font-family-secondary: 'Karla', sans-serif;
 
 // Font sizes
 $font-size-base: 1.6rem; // 16px
@@ -10,8 +10,13 @@ $font-size-large: 2.4rem; // 24px
 $font-size-xlarge: 3.2rem; // 32px
 $font-size-xxlarge: 4.8rem; // 48px
 $font-size-xxxlarge: 6.4rem; // 64px
+$font-size-xxxxlarge: 8rem; // 80px
+
+$font-size-hero-heading: 10rem; // 100px
+
+
 
 // Font weight
+$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
-$font-weight-extrabold: 800;
