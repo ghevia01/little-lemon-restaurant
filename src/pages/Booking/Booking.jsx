@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { useFetchAvailableTimes } from "../../hooks/fetchData.js";
 
-import SectionWrapper from "../../components/layout/SectionWrapper/SectionWrapper";
 import Header from "../../components/layout/Header/Header";
 import BookingForm from "../../components/layout/BookingForm/BookingForm";
 import Footer from "../../components/layout/Footer/Footer";
