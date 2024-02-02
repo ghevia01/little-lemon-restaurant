@@ -1,0 +1,52 @@
+@import "../../../styles/utils/variables.scss";
+@import "../../../styles/base/typography.scss";
+
+.special-item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: $border-radius-medium;
+  box-shadow: rgba(73, 94, 87, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: rgba(73, 94, 87, 0.5) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .special-item-image {
+    width: 100%;
+    height: 30rem; // Set a fixed height or use aspect ratio
+    object-fit: cover; // Ensures the image covers the area, without stretching
+  }
+
+  .special-item-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: $spacing-3;
+    padding: $spacing-5;
+
+    .special-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .special-item-name {
+      color: #333;
+    }
+
+    .special-item-price {
+      font-size: $font-size-medium;
+      font-weight: $font-weight-bold;
+      color: $color-secondary-1;
+    }
+
+    .special-item-description {
+      color: $color-primary-1;
+    }
+  }
+}
