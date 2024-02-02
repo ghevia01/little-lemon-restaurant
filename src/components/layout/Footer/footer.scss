@@ -1,0 +1,118 @@
+@import "../../../styles/utils/variables";
+@import "../../../styles/base/typography";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  // Navigation section
+  &-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 20rem;
+    border-top: 1px solid #d0d0d0;
+
+    .nav {
+      display: flex;
+      align-items: flex-start;
+      gap: 8rem;
+
+      &-column {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-4;
+      }
+
+      &-title {
+        font-size: $font-size-large;
+        font-weight: $font-weight-bold;
+        color: #555;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-1;
+      }
+
+      &-item {
+        font-size: $font-size-small;
+        font-weight: $font-weight-regular;
+        color: #555;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // Socials section
+  &-socials {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: $spacing-1;
+
+    .socials-title {
+      width: 100%;
+      font-size: $font-size-large;
+      font-weight: 700;
+      color: #555;
+      text-align: center;
+    }
+
+    .socials-icon-group {
+      display: flex;
+      justify-content: center;
+      gap: 2.4rem;
+
+      .socials-icon {
+        display: inline-block;
+        font-size: 4rem;
+        color: #6a6a6a;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .facebook-icon {
+        &:hover {
+          color: #3b5998;
+        }
+      }
+
+      .instagram-icon {
+        &:hover {
+          color: #e4405f;
+        }
+      }
+
+      .youtube-icon {
+        &:hover {
+          color: #cd201f;
+        }
+      }
+
+      .pinterest-icon {
+        &:hover {
+          color: #bd081c;
+        }
+      }
+    }
+  }
+
+  // Bottom section
+  &-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.24rem;
+    margin-top: 8rem;
+    font-size: 1.44rem;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #525252;
+  }
+}
