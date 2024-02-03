@@ -1,0 +1,31 @@
+@import "../../../styles/utils/variables.scss";
+@import "../../../styles/base/typography.scss";
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-6;
+  padding: $padding-section;
+  background: linear-gradient(
+    to bottom,
+    rgba(73, 94, 87, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: $color-highlight-1;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: $font-size-medium;
+      color: $color-white;
+    }
+  }
+}
