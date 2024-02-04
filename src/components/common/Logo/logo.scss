@@ -1,0 +1,24 @@
+@import "../../../styles/utils/variables.scss";
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .logo {
+    img {
+      width: 14rem;
+    }
+  }
+}

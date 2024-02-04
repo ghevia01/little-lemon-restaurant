@@ -1,0 +1,66 @@
+@import "../../../styles/utils/variables.scss";
+@import "../../../styles/base/typography.scss";
+
+.booking-form {
+  max-width: 100rem; // 600px
+  margin: 0 auto;
+  padding: 4rem 8rem; // 40px 60px
+  border: 1px solid $color-primary-1;
+  border-radius: $border-radius-large;
+  background-color: $color-white;
+  box-shadow: $box-shadow-cards;
+
+  .form-header {
+    display: flex;
+    flex-direction: column;
+    color: $color-primary-1;
+    text-align: center;
+    gap: $spacing-3;
+
+    .form-title {
+      font-size: $font-size-xxxlarge;
+    }
+
+    .form-message {
+      font-size: $font-size-base;
+    }
+  }
+
+  // Form
+  form {
+    border-top: 1px solid #e0e0e0;
+    margin-top: $spacing-5;
+    gap: $spacing-5;
+    padding-top: $spacing-5;
+
+    .form-row-wrapper {
+      gap: $spacing-1;
+    }
+
+    .form-group {
+      width: $width-full;
+
+      .form-label {
+        color: $color-black;
+      }
+
+      .form-field,
+      .form-select {
+        padding: $spacing-2;
+        border: 1px solid $color-primary-1;
+        border-radius: $border-radius-medium;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          outline: none;
+          border-color: $color-primary-2;
+        }
+      }
+
+      .error-message {
+        color: $color-danger;
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../../styles/utils/variables.scss";
+@import "../../../styles/base/typography.scss";
+
+.specials {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-5;
+  padding: $padding-specials;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .specials-button {
+      padding: $spacing-3 $spacing-4;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: $spacing-6;
+  }
+}
+
+// @media screen and (max-width: 1250px) {
+//   .specials-grid {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 12rem 0;
+//   }
+// }

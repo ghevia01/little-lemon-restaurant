@@ -1,0 +1,41 @@
+@import "../../../styles/utils/variables.scss";
+@import "../../../styles/base/typography.scss";
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $height-full;
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-6;
+
+    .nav-item {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $color-primary-1;
+        transition: width 0.2s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      .nav-link {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-regular;
+        color: $color-primary-1;
+      }
+    }
+  }
+}

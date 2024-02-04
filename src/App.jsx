@@ -1,19 +1,22 @@
-import Header from "./components/Header/Header";
-import Nav from "./components/Nav/Nav";
-import Footer from "./components/Footer/Footer";
-import Main from "./components/Main/Main";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
+import Booking from "./pages/Booking/Booking";
+import ConfirmedBooking from "./pages/ConfirmedBooking/ConfirmedBooking";
 
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <h1>React App</h1>
-      <Header />
-      <Nav />
-      <Main />
-      <Footer />
-    </>
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/confirmed-booking" element={<ConfirmedBooking />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
