@@ -4,9 +4,16 @@ import StarRating from "../StarRating/StarRating";
 
 import "./testimonial-card.scss";
 
-const TestimonialCard = ({ image, name, profession, rating, comment }) => {
+const TestimonialCard = ({
+  className,
+  image,
+  name,
+  profession,
+  rating,
+  comment,
+}) => {
   return (
-    <div className="testimonial-card">
+    <div className={`testimonial-card ${className}`}>
       <div className="testimonial-image">
         <img src={image} alt={name} />
       </div>
@@ -23,6 +30,7 @@ const TestimonialCard = ({ image, name, profession, rating, comment }) => {
 };
 
 TestimonialCard.propTypes = {
+  className: PropType.string,
   image: PropType.string.isRequired,
   name: PropType.string.isRequired,
   profession: PropType.string.isRequired,

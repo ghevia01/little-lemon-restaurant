@@ -5,7 +5,7 @@ import "./specials.scss";
 
 function Specials() {
   return (
-    <section className="specials-section">
+    <section className="specials">
       <div className="specials-header">
         <h2>This Weeks Specials!</h2>
         <Button className="specials-button" variant="secondary">

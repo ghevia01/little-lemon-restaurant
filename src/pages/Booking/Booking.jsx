@@ -25,13 +25,11 @@ function Booking() {
   return (
     <>
       <Header />
-      <main>
-        <SectionWrapper className="booking">
-          <BookingForm
-            availableTimes={availableTimeSlots}
-            onDateChange={handleDateChange}
-          />
-        </SectionWrapper>
+      <main className="booking">
+        <BookingForm
+          availableTimes={availableTimeSlots}
+          onDateChange={handleDateChange}
+        />
       </main>
       <Footer />
     </>

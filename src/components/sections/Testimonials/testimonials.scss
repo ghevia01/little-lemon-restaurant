@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: $spacing-6;
+  gap: 12rem;
   padding: $padding-section;
   background: linear-gradient(
     to bottom,
@@ -27,5 +27,25 @@
       font-size: $font-size-medium;
       color: $color-white;
     }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: $spacing-6;
+  }
+
+  .testimonial-card-highlighted {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12rem 0;
   }
 }

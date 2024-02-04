@@ -1,0 +1,45 @@
+@import "../../../styles/utils/variables";
+@import "../../../styles/base/typography";
+
+.footer-nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 8rem;
+
+  .nav-column {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+  }
+
+  .nav-title {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    color: #555;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-1;
+  }
+
+  .nav-item {
+    font-size: $font-size-small;
+    font-weight: $font-weight-regular;
+    cursor: pointer;
+
+    .nav-link {
+      color: #646464;
+
+      &:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: #646464;
+      }
+    }
+  }
+}

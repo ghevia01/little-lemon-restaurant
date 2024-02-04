@@ -2,18 +2,15 @@
 @import "../../../styles/base/typography.scss";
 
 .testimonial-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: $spacing-1;
-  padding: $spacing-6;
+  padding: 8rem $spacing-5 6rem $spacing-5;
   border: 1px solid $color-primary-1;
-  border-radius: $border-radius-medium;
+  border-radius: $border-radius-large;
   background-color: $color-white;
   box-shadow: rgba(73, 94, 87, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  overflow: hidden;
   transition: box-shadow 0.3s ease;
 
   &:hover {
@@ -22,8 +19,12 @@
   }
 
   .testimonial-image {
-    width: 10rem;
-    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12rem;
+    height: 12rem;
     border: 1px solid $color-primary-1;
     border-radius: 50%;
     overflow: hidden;
@@ -54,25 +55,25 @@
     .testimonial-text {
       margin-top: $spacing-5;
       quotes: "“" "”" "‘" "’";
-    }
 
-    .testimonial-text::before,
-    .testimonial-text::after {
-      content: open-quote;
-      font-size: $font-size-xxlarge;
-      line-height: 0;
-      vertical-align: middle;
-      color: $color-primary-1;
-    }
+      &::before,
+      &::after {
+        content: open-quote;
+        font-size: $font-size-xxlarge;
+        line-height: 0;
+        vertical-align: middle;
+        color: $color-primary-1;
+      }
 
-    .testimonial-text::after {
-      content: close-quote;
+      &::after {
+        content: close-quote;
+      }
     }
 
     .testimonial-rating {
       margin-top: $spacing-3;
       font-size: $font-size-large;
-      color: #71BDA4;
+      color: #71bda4;
     }
   }
 }
