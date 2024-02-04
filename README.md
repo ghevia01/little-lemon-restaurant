@@ -66,6 +66,12 @@ This project is built using the following technologies:
 #### Footer Section
 ![Home Page](src/assets/webpage-images/image5.png)
 
+#### Reservation Page
+![Reservation Page](src/assets/webpage-images/image6.png)
+
+#### Confirmation Page
+![Confirmation Page](src/assets/webpage-images/image7.png)
+
 ## License
 
 This project is currently not under any specific license.
