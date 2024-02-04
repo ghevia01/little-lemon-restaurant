@@ -14,7 +14,15 @@ To get started with the Little Lemon Restaurant website, you need to have Node.j
 2. Navigate to the project directory.
 3. Run `npm install` to install all the dependencies.
 
-### Dependencies
+## Running the Project
+
+To run the project, use the following command:
+
+```bash
+npm run dev
+```
+
+## Dependencies
 
 - "react": "^18.2.0"
 - "react-dom": "^18.2.0"
@@ -41,9 +49,22 @@ This project is built using the following technologies:
 - Vite
 - SCSS
 
-## How to Contribute
+## Website Images
 
-We are always open to contributions and improvements. If you have any suggestions or contributions, please feel free to fork the repository and submit a pull request.
+#### Header and Hero Section
+![Home Page](src/assets/webpage-images/image.png)
+
+#### Specials Section
+![Home Page](src/assets/webpage-images/image2.png)
+
+#### About Section
+![Home Page](src/assets/webpage-images/image3.png)
+
+#### Testimonials Section
+![Home Page](src/assets/webpage-images/image4.png)
+
+#### Footer Section
+![Home Page](src/assets/webpage-images/image5.png)
 
 ## License
 
