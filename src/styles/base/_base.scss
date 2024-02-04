@@ -8,6 +8,7 @@
 // HTML element
 html {
   font-size: 62.5%; // 1rem = 10px
+  background-color: #f5f5f5;
 }
 
 // Body
@@ -15,6 +16,7 @@ body {
   font-family: $font-family-secondary;
   font-size: $font-size-base;
   line-height: $line-height-base;
+  background-color: #e6e6e6;
 }
 
 // Custom Resets
@@ -102,3 +104,16 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+// Images
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+// Media Queries
+
+// ------------Typography-------------- //
+
+

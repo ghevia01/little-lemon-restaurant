@@ -2,10 +2,18 @@
 @import "../../../styles/base/typography.scss";
 
 .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: $height-full;
-  ul {
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: $spacing-6;
-    li {
+
+    .nav-item {
       position: relative;
 
       &::after {
@@ -23,7 +31,7 @@
         width: 100%;
       }
 
-      a {
+      .nav-link {
         font-size: $font-size-medium;
         font-weight: $font-weight-regular;
         color: $color-primary-1;

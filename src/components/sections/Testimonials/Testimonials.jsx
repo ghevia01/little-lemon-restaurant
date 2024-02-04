@@ -10,9 +10,13 @@ function Testimonials() {
         <h2>Tales from the Table</h2>
         <p>What our customers are saying about us</p>
       </div>
-      <div className="specials-grid">
-        {TESTIMONIALS.map((testimonial) => (
-          <TestimonialCard key={testimonial.name} {...testimonial} />
+      <div className="testimonials-grid">
+        {TESTIMONIALS.map((testimonial, index) => (
+          <TestimonialCard
+            className={index === 1 ? "testimonial-card-highlighted" : ""}
+            key={index}
+            {...testimonial}
+          />
         ))}
       </div>
     </section>

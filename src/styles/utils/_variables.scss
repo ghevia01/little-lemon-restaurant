@@ -24,6 +24,7 @@ $width-full: 100%;
 
 // Height
 $height-full: 100%;
+$height-header: 7vh; // 70px
 
 // ------------Spacing Variables-------------- //
 
@@ -38,9 +39,11 @@ $margin-4: 2.4rem; // 24px
 $margin-5: 3.2rem; // 32px
 
 // Padding
-$padding-header: 0 22rem; // 0 200px
-$padding-hero: 16rem 22rem; // 200px 200px
-$padding-section: 6rem 22rem; // 80px 200px
+$padding-sides: 22rem; // 24px
+$padding-header: 1vh $padding-sides; // 10px 220px
+$padding-hero: 16rem $padding-sides; // 160px 220px
+$padding-specials: 15rem $padding-sides; // 150px 220px
+$padding-section: 6rem $padding-sides; // 60px 220px
 
 // Spacing
 $spacing-1: 0.8rem; // 8px
@@ -77,10 +80,3 @@ $border-color-base: #333333;
 // Box Shadows
 $box-shadow-cards: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 $box-shadow-hovered: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-
-// ------------Breakpoints Variables-------------- //
-
-$breakpoint-small: 37.5em; // 600px
-$breakpoint-medium: 56.25em; // 900px
-$breakpoint-large: 75em; // 1200px
-$breakpoint-xlarge: 112.5em; // 1800px
