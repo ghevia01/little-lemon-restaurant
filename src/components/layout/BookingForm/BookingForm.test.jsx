@@ -27,7 +27,7 @@ describe("BookingForm", () => {
   });
 
   it("renders without crashing", () => {
-    expect(screen.getByText("Book a Table")).toBeInTheDocument();
+    expect(screen.getByText("Make a Reservation")).toBeInTheDocument();
   });
 
   it("submits form with valid inputs", async () => {

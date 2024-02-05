@@ -12,7 +12,7 @@ export const TESTIMONIALS = [
     image: "https://randomuser.me/api/portraits/women/12.jpg",
     name: "Emily Johnson",
     profession: "Food Critic",
-    rating: 5,
+    rating: 4.5,
     comment:
       "Little Lemon serves up a symphony of flavors that's sure to delight. Each bite reveals a thoughtful blend of ingredients, making for an unforgettable dining experience that any food aficionado would appreciate.",
   },

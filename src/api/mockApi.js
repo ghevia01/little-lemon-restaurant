@@ -15,9 +15,17 @@ export const getRandomTimeSlots = (date) => {
 
   // Randomly select a number of slots to return
   const numberOfSlots = Math.floor(Math.random() * (timeSlots.length / 2)) + 1;
-  const selectedTimeSlots = timeSlots
+  let selectedTimeSlots = timeSlots
     .sort(() => 0.5 - Math.random())
     .slice(0, numberOfSlots);
+
+     // Sort the selected time slots in ascending order
+  selectedTimeSlots = selectedTimeSlots.sort((a, b) => {
+    // Convert time strings to Date objects for comparison
+    const timeA = new Date(`1970-01-01T${a}:00`);
+    const timeB = new Date(`1970-01-01T${b}:00`);
+    return timeA - timeB;
+  });
 
   // Simulate an API response
   return {
