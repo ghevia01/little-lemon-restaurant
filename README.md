@@ -1,6 +1,6 @@
 # Little Lemon Restaurant
 
-THis is the Capstone project for the Meta Front-End Developer Professional Certificate. The project is a website for a restaurant called Little Lemon. The website is built using React and Vite.
+This is the Capstone project for the Meta Front-End Developer Professional Certificate. The project is a website for a restaurant called Little Lemon. The website is built using React and Vite.
 
 ## Description
 
